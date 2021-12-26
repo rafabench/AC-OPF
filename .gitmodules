@@ -1,0 +1,3 @@
+[submodule "data/pglib-opf"]
+	path = data/pglib-opf
+	url = ../../power-grid-lib/pglib-opf.git
