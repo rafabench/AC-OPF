@@ -4,6 +4,7 @@ Final project of Convex Optimization II aiming to study convex relaxations for A
 McCormick, SDP and SOCP relaxations were performed.
 
 Notebook: [OPTflow.ipynb](https://nbviewer.org/github/rafabench/AC-OPF/blob/master/notebooks/OPTFlow.ipynb)
+Benchmarks with Typical Operating Conditions (TYP), Congested Operating Conditions (API) and Small Angle Difference Conditions (SAD)
 
 # References
 
