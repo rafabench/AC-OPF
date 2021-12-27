@@ -23,7 +23,7 @@ function optimality_gap_mosek(model, opt_value, file)
     return abs((opt_value-obj)/(opt_value)*100)
 end
 
-function benchmark(tests, network=TYP, sdp=true)
+function benchmark(tests, network=TYP, sdp=true, timelimit=600.0)
     cases = case[]
     full_data = raw"..\data\pglib-opf"
     count = 1
@@ -46,6 +46,10 @@ function benchmark(tests, network=TYP, sdp=true)
         model_mc = build_problem(filepath,mosek, MC)
         model_sdp = build_problem(filepath,mosek, SDP)
         model_socp = build_problem(filepath,mosek, SOCP)
+        set_time_limit_sec(model_nl, timelimit)
+        set_time_limit_sec(model_mc, timelimit)
+        set_time_limit_sec(model_sdp, timelimit)
+        set_time_limit_sec(model_socp, timelimit)
         set_silent(model_nl)
         set_silent(model_mc)
         if sdp
