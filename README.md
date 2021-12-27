@@ -3,6 +3,8 @@
 Final project of Convex Optimization II aiming to study convex relaxations for AC Optimal Power Flow.
 McCormick, SDP and SOCP relaxations were performed.
 
+Notebook: [OPTflow.ipynb](https://nbviewer.org/github/rafabench/AC-OPF/blob/master/notebooks/OPTFlow.ipynb)
+
 # References
 
 - [The Power Grid Library for Benchmarking AC Optimal Power Flow Algorithms](https://arxiv.org/pdf/1908.02788.pdf)
